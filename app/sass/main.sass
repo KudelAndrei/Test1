@@ -4,19 +4,19 @@
 @import "vars"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #958686
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: #958686
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: #958686
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: #958686
 	opacity: 1
 
 body input:focus:required:invalid,
@@ -34,12 +34,199 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: $default-font
+	//font-family: $default-font
 	overflow-x: hidden
+	margin: 0
+	padding: 0
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+a 
+	color: $blue-color
+
+ul, li 
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+//// основные стили //////
+
+.container, .row
+	zoom: 1
+	&::before, &::after
+		content: ''
+		display: table
+	&:after
+		clear: both
+
+
+
+// на всю ширину
+.container
+	width: 100%
+	max-width: 1340px
+	margin: 0 auto
+
+.col
+	float: left
+	box-sizing: border-box
+
+	&-lg-8
+		width: 100%
+		float: none
+	&-lg-7
+		width: 87.5%
+	&-lg-6
+		width: 75%
+	&-lg-5
+		width: 62.5%
+	&-lg-4
+		width: 50%
+	&-lg-3
+		width: 37.5%
+	&-lg-2
+		width: 25%
+	&-lg-1
+		width: 12.5%	
+
+
+.row
+	width: 100%
+	max-width: 910px
+	margin: 0 auto
+
+.logo
+	font-size: 19px
+	line-height: 34px
+	font-family: "MuseoSans", sans-serif
+	display: inline-block
+	color: #fff 
+	text-decoration: none
+	&:hover, &:active
+		text-decoration: none
+		color: #a5bdf9
+
+.menu
+	display: inline-block
+	float: right
+	li 
+		display: inline-block
+		margin-right: 50px
+		a 
+			color: #fff
+			&:hover
+				text-decoration: none
+				color: #a5bdf9
+
+.center
+	text-align: center
+
+//// основные стили //////
+
+
+
+
+
+/// обычные стили ///
+.header
+	background-color: $dark-color
+	color: #fff
+	padding-top: 10px
+	min-height: 335px
+
+	.header-top
+		margin-bottom: 35px
+
+		.form
+			width: 100%
+			input
+				height: 40px
+				border-radius: 3px
+				border: none
+				width: calc(100% - 155px)
+				font-size: 14px
+				line-height: 25px
+				padding-left: 15px
+			button
+				background-color: $blue-color
+				color: #fff
+				border: none
+				display: inline-block
+				padding: 8px 25px
+				border-radius: 3px
+				font-size: 14px
+				margin-left: 10px
+				line-height: 25px
+				transition: background-color ease-in-out 0.2s
+				cursor: pointer
+				&:hover
+					background-color: lighten($blue-color, 10%)
+	
+	.header-center
+		margin-bottom: 120px
+		h1
+			margin-top: 0
+			font-size: 30px
+			line-height: 42px
+		p 
+			font-size: 17px
+			line-height: 25px
+		.center
+			>p 
+				font-size: 14px
+
+
+
+.answers
+	position: relative
+	top: -85px
+	.article-item
+		background-color: #FFF
+		margin-bottom: 25px
+		.answer
+			font-size: 19px
+			line-height: 26px
+		>p 
+			line-height: 25px
+			margin-top: 5px
+			margin-bottom: 15px
+		.bottom-line
+			p 
+				margin-top: 0
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				display: inline-block
+				max-width: 400px
+				margin-bottom: 10px
+		a.link
+			float: right
+		.author
+			float: left
+			display: inline-block
+			margin-right: 35px
+			i 
+				color: $green-color
+				margin-right: 5px
+			span
+				font-size: 14px
+				color: #9f9090
+		button.mark
+			display: inline-block
+			border: none
+			font-size: 14px
+			color: #9f9090
+			background-color: transparent
+			cursor: pointer
+			&:hover
+				color: darken(#9f9090, 20%)
+		&:first-child
+			border-radius: 3px
+			border: 1px solid $green-color
+	
+
 
 @import "media" // Всегда в конце
