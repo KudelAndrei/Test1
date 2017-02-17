@@ -33,16 +33,19 @@
 		<div class="header-top">
 
 			<div class="container">
-				<div class="col col-lg-2">
-					<a href="#" class="logo col">Q&A.com</a>
+
+				<div class="col">
+					<a href="#" class="logo">Q&A.com</a>
 				</div>
 
-				<div class="col col-lg-3">
-					<form class="form"><input type="text" placeholder="Search for millions questions and answers"><button type="submit" class="btn">Find Q&A’s</button></form>
+				<div class="row ">
+					<div class="col col-lg-5 col-inp col-lg-offset-1">
+						<form class="form"><input type="text" placeholder="Search for millions questions and answers" required><button type="submit" class="btn">Find Q&A’s</button></form>
+					</div>
 				</div>
 
-				<div class="col col-lg-3">
 					<nav>
+						<div class="toggle-menu"><span></span></div>
 						<ul class="menu">
 							<li><a href="#">About</a></li>
 							<li><a href="#">Support</a></li>
@@ -51,8 +54,6 @@
 						</ul>
 					</nav>
 				</div>
-
-			</div>
 
 		</div>
 
@@ -69,6 +70,19 @@
 			</div>
 		</div>
 
+		<div class="header-bottom center">
+			<div class="row">
+				<div class="col col-lg-3 col-lg-offset-5">
+					<ul class="soc">
+						<li>Share:</li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 	</header>
 
 	<section class="answers">
@@ -79,39 +93,112 @@
 					
 					<div class="article-item">
 						<div class="cat">Best answer</div>
-						<a href="#" class="answer">How should I read to children?</a>
-						<p>In a matter of months, I will begin volunteer hours at the local library and one of the tasks I can do is read to children. Is there any specific way I should read to them, hand gestures for specific parts, etc?</p>
-						<span>Answer:</span>
-						<div class="bottom-line"><p>Don't use a monotone voice. Use expression when ypu speek speek,</p> <a href="#" class="link">Read more</a></div>
-						<div class="author"><i class="fa fa-user" aria-hidden="true"></i><span>James Blane at Quora</span></div>
-						<button class="mark">Mark as irrelevant</button>
+						<div class="article-wrap">
+							<a href="#" class="answer">How should I read to children?</a>
+							<p>In a matter of months, I will begin volunteer hours at the local library and one of the tasks I can do is read to children. Is there any specific way I should read to them, hand gestures for specific parts, etc?</p>
+							<span>Answer:</span>
+							<div class="bottom-line"><p>Don't use a monotone voice. Use expression when ypu speek speek,</p> <a href="#" class="link">Read more</a></div>
+							<div class="author"><i class="fa fa-user" aria-hidden="true"></i><a href="#">James Blane at Quora</a></div>
+						</div>
 					</div>
 
 					<div class="article-item">
-						<div class="cat">Best answer</div>
-						<a href="#" class="answer">How should I read to children?</a>
-						<p>In a matter of months, I will begin volunteer hours at the local library and one of the tasks I can do is read to children. Is there any specific way I should read to them, hand gestures for specific parts, etc?</p>
-						<span>Answer:</span>
-						<div class="bottom-line"><p>Don't use a monotone voice. Use expression when ypu speek speek,</p> <a href="#" class="link">Read more</a></div>
-						<div class="author"><i class="fa fa-user" aria-hidden="true"></i><span>James Blane at Quora</span></div>
-						<button class="mark">Mark as irrelevant</button>
+						<div class="article-wrap">
+							<div class="cat">Other answer</div>
+							<a href="#" class="answer">How to read parent and children data from SQL?</a>
+							<p>All parents separately: and then read all children separately: and use LINQ to merge all parents with children. This approach makes 2 trips to the db. The third and final (also most inefficient) approach is to grab all parents, ... and while constructing each </p>
+							<span>Answer:</span>
+							<div class="bottom-line"><p>I prefer pulling all results in one query and jus build the ... tree in </p> <a href="#" class="link">Read more</a></div>
+							<div class="author"><i class="fa fa-user" aria-hidden="true"></i><a href="#">nickname1789 at Stackoverflow</a></div>
+							<button class="mark">Mark as irrelevant </button><button class="mark-undo">Undo</button>
+						</div>
+					</div>
+
+					<div class="article-item">
+						<div class="article-wrap">
+							<a href="#" class="answer">how to read multiple children from xml</a>
+							<p>in my project we use xpath to extract values from xml for example: Now the xml got changed like it has max of 13 children to one lid list some thing like this previously it was like this so I used to extract but now the ...  xml got changed and..as said b4..it </p>
+							<span>Answer:</span>
+							<div class="bottom-line"><p>First, make sure the element names in your XPath ... match the ,</p> <a href="#" class="link">Read more</a></div>
+							<div class="author"><i class="fa fa-user" aria-hidden="true"></i><a href="#">Monica Bell at Yahoo Answers</a></div>
+							<button class="mark">Mark as irrelevant</button><button class="mark-undo">Undo</button>
+						</div>
+					</div>
+
+					<div class="article-item">
+						<div class="article-wrap">
+							<a href="#" class="answer">Do children read books nowadays?how can we make them discover the pleasure of reading?</a>
+							<p>i mean, nowadays you see children and teenagers in front of a tv, conputer or always on the phone, but never holding a book in theyr hands.how is it possible?! how can we make it better? we must protect them from  ... </p>
+							<span>Answer:</span>
+							<div class="bottom-line"><p>Well, when/if you ever take a step into a Barnes and </p> <a href="#" class="link">Read more</a></div>
+							<div class="author"><i class="fa fa-user" aria-hidden="true"></i><a href="#">Julee Lane at Ask.com</a></div>
+							<button class="mark">Mark as irrelevant</button><button class="mark-undo">Undo</button>
+						</div>
+					</div>
+
+					<div class="article-item">
+						<div class="article-wrap">
+							<a href="#" class="answer">Are there any methods of teaching children how to read without subvocalization?</a>
+							<p>I am talking about small children when they first learn how to read.</p>
+							<span>Answer:</span>
+							<div class="bottom-line"><p>Phonics is the best way to teach children to read.</p> <a href="#" class="link">Read more</a></div>
+							<div class="author"><i class="fa fa-user" aria-hidden="true"></i><a href="#">crosss9090 at Yahoo Answers</a></div>
+							<button class="mark">Mark as irrelevant</button><button class="mark-undo">Undo</button>
+						</div>
+					</div>
+
+					<div class="article-item">
+						<div class="article-wrap">
+							<div class="cat">The following answers may be helpfull too</div>
+							<a href="#" class="answer">Why You Should Read With Your Child</a>
+							<p>3 reasons you should read to your children. You probably already know that you should read to your children, but do you know why? Here are three important …</p>
+							<button class="bing">Bing</button><a href="#" class="link">Read more</a>
+						</div>
 					</div>
 
 				</article>
 			</div>
 
-			<div class="col col-lg-3">
+			<div class="col col-lg-2 col-offset-0">
 				<aside class="asides">
-					
-					<div class="aside-item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus mollitia eos, iste dolorum magnam, quae qui! Molestias harum, ipsam tenetur quia voluptatum aperiam sapiente totam obcaecati iste, quod accusamus maiores?
-					</div>
+					<h3>Related searches</h3>
+					<ul class="asides-wrap">
+						<li><a href="#">how to locate/read the file to read using jopendocument</a><span>6 answer</span></li>
+						<li><a href="#">How not to read commas for some input values in read.transactions() in R?</a><span>4 answer</span></li>
+						<li><a href="#">hHow to read parent and children with different type from JSON file?</a><span>7 answer</span></li>
+						<li><a href="#">How do u read a Megger Digital Earth Tester? If the display showed .465, how would you say/read that?</a><span>6 answer</span></li>
+						<li><a href="#">Invisible Children, Inc.: How much new attention has Invisible Children received since the new viral Kony 2012 video?</a><span>6 answer</span></li>
+					</ul>
+
+					<h3>Trending topics</h3>
+					<ul class="asides-wrap">
+						<li><a href="#">How you sell on ebay?</a><span>7 answer</span></li>
+						<li><a href="#">tor browser bundle: how to use a rented proxy after connecting to tor? (proxy chain)</a><span>8 answer</span></li>
+						<li><a href="#">How to sell on ebay using my visa electron card?</a><span>7 answer</span></li>
+						<li><a href="#">How can sell on ebay item???but im non us?</a><span>3 answer</span></li>
+						<li><a href="#">Where Can You Watch Sec Football Online For Free</a><span>1 answer</span></li>
+					</ul>
 
 				</aside>
 			</div>
 		</div>
 
 	</section>
+
+	<footer class="footer">
+		<div class="row">
+			<div class="col col-lg-4"><a href="#" class="logo">Q&A.com</a></div>
+			<div class="col col-lg-4">
+				<ul class="menu-bottom">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Categories</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Terms of use</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
