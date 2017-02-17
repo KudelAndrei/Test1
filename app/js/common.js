@@ -1,12 +1,23 @@
-$(window).resize(function(){
 
-});
+$(window).on('load resize', windowSize);
+
+	function windowSize(){
+		if ($(window).width() <= '1150'){
+				$('.menu').addClass("mobile");
+		} else {
+				$('.menu').removeClass("mobile");
+		}
+	}
 
 $(window).ready(function(){
 
 	$(".toggle-menu").click(function(){
 		$(this).toggleClass("active");
-		$(".menu").slideToggle().toggleClass("mobile");
+		$(".menu.mobile").slideToggle();
+	});
+	$(".menu li").click(function(){
+		$('.menu.mobile').slideToggle();
+		$(".toggle-menu").toggleClass("active");
 	});
 
 

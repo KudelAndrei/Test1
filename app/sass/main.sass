@@ -67,6 +67,7 @@ ul, li
 // на всю ширину
 .container
 	width: 100%
+	position: relative
 	max-width: 1340px
 	margin: 0 auto
 
@@ -74,7 +75,7 @@ ul, li
 	float: left
 	box-sizing: border-box
 
-	&-lg-8, &-lg-offset-8
+	&-lg-8
 		width: 100%
 		float: none
 	&-lg-7
@@ -92,6 +93,8 @@ ul, li
 	&-lg-1
 		width: 12.5%	
 
+	&-offset-0
+		margin-left: 8%
 	&-lg-offset-5
 		margin-left: 62.5%
 
@@ -127,7 +130,7 @@ ul, li
 	position: absolute
 	right: 50px
 	cursor: pointer
-	top: 0px
+	top: -6px
 	width: 40px
 	height: 54px
 	display: none
@@ -184,13 +187,16 @@ ul, li
 		.form
 			width: 100%
 			input
-				height: 40px
+				height: 38px
 				border-radius: 3px
 				border: none
-				width: calc(100% - 155px)
+				width: calc(100% - 165px)
 				font-size: 14px
 				line-height: 25px
 				padding-left: 15px
+				border: 1px solid transparent
+				&:required:valid
+					border: 1px solid $green-color
 			button
 				background-color: $blue-color
 				color: #fff
@@ -207,12 +213,12 @@ ul, li
 					background-color: lighten($blue-color, 10%)
 		.menu
 			position: absolute
-			top: 20px
+			top: 8px
 			right: 0
 		
 		.logo
 			position: absolute
-			top: 15px
+			top: 6px
 			left: 15px
 	
 	.header-center
@@ -257,6 +263,7 @@ ul, li
 			.mark 
 				color: #ff0808
 				opacity: 1
+				display: inline-block
 			.mark-undo
 				display: inline-block
 		
@@ -285,7 +292,7 @@ ul, li
 				overflow: hidden
 				text-overflow: ellipsis
 				display: inline-block
-				max-width: 400px
+				max-width: calc(100% - 90px)
 				margin-bottom: 10px
 		a.link
 			float: right
@@ -318,8 +325,10 @@ ul, li
 		button.bing
 			display: inline-block
 			padding-left: 0
+
 		&:last-child
 			border-bottom: none
+
 		&:first-child
 			border-radius: 3px
 			border: 1px solid rgba($green-color, .5)
@@ -398,6 +407,8 @@ ul, li
 			a
 				color: #fff
 				margin-right: 20px
+				&:hover
+					text-decoration: none
 
 
 @import "media" // Всегда в конце
